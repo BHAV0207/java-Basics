@@ -1,4 +1,4 @@
 # java-Basics
-this repo contains the code of my initial learning days when i started coding in java.
+This repo contains the code of my initial learning days when I started coding in java.
 
 
