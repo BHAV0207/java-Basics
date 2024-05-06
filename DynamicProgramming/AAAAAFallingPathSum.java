@@ -3,11 +3,11 @@ public class AAAAAFallingPathSum {
      
     public static int MaxSum(int i , int j , int arr[][] , int ans[][]) {
         //n is the row size , m is the column size ;
-        if(i == 0){
-            return arr[i][j];
-        }
         if(j<0 || j>=arr[0].length){
             return (int)-1e9;
+        }
+        if(i == 0){
+            return arr[i][j];
         }
         if(ans[i][j] != -1){
             return ans[i][j];

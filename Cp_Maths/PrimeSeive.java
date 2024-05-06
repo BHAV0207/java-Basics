@@ -22,15 +22,19 @@ public class PrimeSeive {
         int n = sc.nextInt();
         boolean ans[] = new boolean[n+1];
 
+
         for(int i =0;i<ans.length ;i++){
             ans[i] = true;
         }
-        ArrayList<Integer> finalAns = new ArrayList<>();
-       finalAns =prime(ans);
+        
 
-       for(int i=0 ;i<finalAns.size() ;i++){
+        ArrayList<Integer> finalAns = new ArrayList<>();
+        finalAns =prime(ans);
+
+
+        for(int i=0 ;i<finalAns.size() ;i++){
             System.out.println(finalAns.get(i));
-       }
+        }
 
 
     }

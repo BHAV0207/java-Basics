@@ -11,7 +11,7 @@ public class Triangle {
         int DigonalDown = arr[i][j] + TRIA(i+1, j+1, down, arr, ans);
 
 
-        return ans[i][j] = Math.min(DigonalDown, DigonalDown);
+        return ans[i][j] = Math.min(down, DigonalDown);
     }
     public static void main(String[] args) {
         

@@ -13,10 +13,10 @@ public class AAAAACoinChangeTwo {
         if(matrix[indx][target]!= -1){
             return matrix[indx][target];
         }
-        int notPick = 0 + coin(indx-1, target, arr, matrix);
+        int notPick =coin(indx-1, target, arr, matrix);
         int pick = 0;
         if(arr[indx]<=target){
-            pick = arr[indx] + coin(indx, target-arr[indx], arr, matrix);
+            pick = coin(indx, target-arr[indx], arr, matrix);
         }
 
         return matrix[indx][target] = pick+notPick;

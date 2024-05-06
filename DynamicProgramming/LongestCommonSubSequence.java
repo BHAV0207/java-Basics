@@ -1,6 +1,6 @@
 public class LongestCommonSubSequence {
     public static int LongestCommon(int i , int j ,String s , String t , int matrix[][] ) {
-        if(i ==0 || j==0){
+        if(i <0 || j<0){
             return 0;
         }
         if(matrix[i][j] != -1){
